@@ -5,7 +5,7 @@ import calendar
 
 st.title("Dashboard afluencia de clientes - Cafe internet")
 
-dfCafe = pd.read_excel("C:\\Users\\Ximena\\PycharmProjects\\ADA4 Dashboard\\resultadoLimpieza.xlsx")
+dfCafe = pd.read_excel("ADA4.Dashboard\\resultadoLimpieza.xlsx")
 anios = list(set(dfCafe['fechaEntrada'].dt.year))
 mes = list(set(dfCafe['fechaEntrada'].dt.month_name()))
 mes_sorted = list(calendar.month_name)
